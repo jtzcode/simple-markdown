@@ -17,31 +17,31 @@ abstract class VisitorBase implements IVisitor {
     }
 }
 
-class Header1Visitor extends VisitorBase {
+export class Header1Visitor extends VisitorBase {
     constructor() {
         super(TagType.Header1, new TagTypeToHtml());
     }
 }
 
-class Header2Visitor extends VisitorBase {
+export class Header2Visitor extends VisitorBase {
     constructor() {
         super(TagType.Header2, new TagTypeToHtml());
     }
 }
 
-class Header3Visitor extends VisitorBase {
+export class Header3Visitor extends VisitorBase {
     constructor() {
         super(TagType.Header3, new TagTypeToHtml());
     }
 }
 
-class ParagraphVisitor extends VisitorBase {
+export class ParagraphVisitor extends VisitorBase {
     constructor() {
         super(TagType.Paragraph, new TagTypeToHtml());
     }
 }
 
-class HorizontalRuleVisitor extends VisitorBase {
+export class HorizontalRuleVisitor extends VisitorBase {
     constructor() {
         super(TagType.HorizontalRule, new TagTypeToHtml());
     }
